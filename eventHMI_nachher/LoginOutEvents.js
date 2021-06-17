@@ -9,8 +9,8 @@ Login/logout Eventklasse
 
 */
 "use strict";
-class LoginOutEvents{
-  static init(DOMquery,events){
+clas LoginOutEvents{
+  sttic init(DOMquery,events){
     LoginOutEvents.events=events;
     if (typeof(ListPlotter.Definition.eventClasses) == "undefined") ListPlotter.Definition.eventClasses = new Array(0);
 
