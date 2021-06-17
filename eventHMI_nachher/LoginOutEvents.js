@@ -6,13 +6,12 @@ Login/logout Eventklasse
   dynamische erzeugung der Filter-Steuerelemente
  *@author TK, 05/2021, version 1.0.1
  *
-
 */
 "use strict";
-clas LoginOutEvents{
-  sttic init(DOMquery,events){
+class LoginOutEvents{
+  static init(DOMquery,events){
     LoginOutEvents.events=events;
-    if (typeof(ListPlotter.Definition.eventClasses) = "undefined") ListPlotter.Definition.eventClasses = new Array(0);
+    if (typeof(ListPlotter.Definition.eventClasses) == "undefined") ListPlotter.Definition.eventClasses = new Array(0);
 
     if (ListPlotter.Definition.eventClasses[1]==null){ //pseudoinit wenn keine Daten aus letzter session
       //login/logout
@@ -20,7 +19,7 @@ clas LoginOutEvents{
     }
     $( DOMquery ).empty();
     $( DOMquery ).append(
-      '<label for="CheckboxRadiosReportBlockUserEvents">Login/out Events</label' +
+      '<label for="CheckboxRadiosReportBlockUserEvents">Login/out Events</label>' +
       '<input type="checkbox" name="CheckboxRadiosReportBlockUserEvents" class="ReportBlockCount" id="CheckboxRadiosReportBlockUserEvents">' +
       '<span class="ReportBlockCount" id="CountReportBlockUserEvents"></span>'
     );
@@ -34,7 +33,6 @@ clas LoginOutEvents{
     //hier einmal pushen in preview auslösen für alle aufgebauten groups
     LoginOutEvents.onControlChange();
   }
-
   /**
     * Vorparsen der Login Events [1]
    */
