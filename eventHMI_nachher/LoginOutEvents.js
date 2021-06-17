@@ -25,7 +25,7 @@ class LoginOutEvents{
       '<span class="ReportBlockCount" id="CountReportBlockUserEvents"></span>'
     );
 
-    $( "#reportBlockUserEvents input".checkboxradio();
+    $( "#reportBlockUserEvents input").checkboxradio();
     $( "#CheckboxRadiosReportBlockUserEvents").prop('checked',ListPlotter.Definition.eventClasses[1]).checkboxradio('refresh');
     $("#CheckboxRadiosReportBlockUserEvents").on("change",function(event){
         LoginOutEvents.onControlChange();
